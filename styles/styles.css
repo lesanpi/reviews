@@ -77,8 +77,8 @@ a{
 	transition: all ease .5s;
 }
 .nav-item:hover{
-	background-color: #ffcc00;
-	color: #1e1e1e;
+	background-color:#1e1e1e; /*#ffcc00;*/
+	color: white;/* #1e1e1e;*/
 }
 .search-button{
 	/*background-color: #ffcc00;*/
