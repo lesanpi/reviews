@@ -204,6 +204,7 @@ a{
 	align-items: center;
 	color: white;
 	padding: 10px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 .footer h1{
@@ -271,6 +272,7 @@ a{
 		width: 96vw;
 
 	}
+
 }
 @media screen and (max-width: 900px){
 	.container{
