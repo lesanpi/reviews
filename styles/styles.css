@@ -80,6 +80,9 @@ a{
 	background-color:#1e1e1e; /*#ffcc00;*/
 	color: white;/* #1e1e1e;*/
 }
+.button{
+	display: none;
+}
 .search-button{
 	/*background-color: #ffcc00;*/
 	width: 50px;
@@ -306,12 +309,64 @@ a{
 @media screen and (max-width: 500px){
 	.container{
 		width: 100vw;
-		height: 260vh;
+		height: 270vh;
 		padding: 0;
 		grid-gap: 0;
 		overflow-x: hidden;
 		overflow-y: all;
 
+	}
+	.button{
+		display: block;
+		height: 40px;
+		width: 100vw;
+	}
+	.nav{
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: #1e1e1e;
+		width: 100vw;
+		height: auto;
+
+		/*position: fixed;
+		top: 0;
+		left: 0;*/
+
+		grid-template-columns: 1fr;
+
+		color: white;
+		
+		box-shadow: 1px 0 1px 0 rgba(0, 0, 0, .5);
+
+		
+	}
+	.items{
+		position: fixed;
+		top: -100%;
+		left: 0;
+		z-index: 1000;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav-item{
+		
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 2px;
+		padding: 18px 100vw;
+		font-size: 16px;
+		transition: all ease .5s;
+	}
+	.nav-item:hover{
+		
+		background-color: white;
+		color: #1e1e1e;
 	}
 	.main-reviews{
 				
@@ -332,6 +387,12 @@ a{
 		grid-template-columns: 1fr;
 
 	}
+	#uno{
+		background: url('../assets/img1.jpg');
+		background-size: cover;
+		font-size: 1.3em
+	}
+
 }
 /*@media screen and (max-width: 800px){
 	.container{
