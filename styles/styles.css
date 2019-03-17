@@ -19,7 +19,7 @@ a{
 }
 .main{
 	width: 100vw;
-	height: 200px;
+	height: 90vh;
 	/*background-color: #1e1e1e;*/
 	background-color: #efefef;
 	display: flex;
@@ -115,7 +115,7 @@ a{
 	grid-row-gap: 20px;
 }
 .last-review{
-	background-color: red;
+	/*background-color: red;*/
 }
 .other-last-reviews{
 	
@@ -153,31 +153,37 @@ a{
 #uno{
 	background: url('../assets/img1.jpg');
 	background-size: cover;
+	background-blend-mode: multiply;
 	font-size: 1.5em
 }
 #dos{
 	background: url('../assets/img2.jpg');
 	background-size: cover;
+	background-blend-mode: multiply;
 	font-size: .9em
 }
 #tres{
 	background: url('../assets/img3.jpg');
 	background-size: cover;
+	background-blend-mode: multiply;
 	font-size: .9em
 }
 #cuatro{
 	background: url('../assets/img4.jpg');
 	background-size: cover;
+	background-blend-mode: multiply;
 	font-size: .8em
 }
 #cinco{
 	background: url('../assets/img5.jpg');
 	background-size: cover;
+	background-blend-mode: multiply;
 	font-size: .8em
 }
 #seis{
 	background: url('../assets/img6.jpg');
 	background-size: cover;
+	background-blend-mode: multiply;
 	font-size: .8em
 }
 .information .category{
@@ -192,6 +198,59 @@ a{
 	font-weight: bold;
 	
 }
+.destacados{
+	width: 100vw;
+	height: 55vh;
+
+}
+.destacados-list{
+	background-color: #efefef;
+	width: 98%;
+	height: 100%;
+	box-shadow: 1px 0 1px 0 rgba(0, 0, 0, .5);
+	display: flex;
+	flex-direction: column;
+	padding: 0 50px;
+}
+.destacados-items{
+	display: grid;
+	justify-content: center;
+	width: 96%;
+	height: 250px;
+	background-color: #1e1e1e;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.title-des{
+	display: flex;
+	flex-direction: column;
+}
+.imagen-des{
+	width: 100%;
+	height: 250px;
+	background: #cecece;
+	background-image: url('../assets/img1.jpg');
+	background-size: cover;
+	
+	background-blend-mode: multiply;
+}
+.category-des{
+	background-color: rgba(10, 10, 10, .9);
+	color: #ffcc00;;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 5px 10px;
+	position: relative;
+	top: 10px;
+	left: 0;
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+
+
 .footer{
 	background-color: #1e1e1e;/*#efefef;;*/
 	height: 100px;
@@ -209,8 +268,8 @@ a{
 }
 .footer h1{
 	color: white;
-	letter-spacing: 2px;
-	font-size: 2rem;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
 }
 .correo{
 	background-color: #1e1e1e;
@@ -399,6 +458,7 @@ a{
 	#uno{
 		background: url('../assets/img1.jpg');
 		background-size: cover;
+		background-blend-mode: multiply;
 		font-size: 1.3em
 	}
 
