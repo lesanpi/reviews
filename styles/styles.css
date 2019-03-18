@@ -89,6 +89,12 @@ a{
 	height: 50px;
 
 }
+.seccion-categoria{
+	background-color: #efefef;
+	height: 220vh;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+	text-align: center;
+}
 .container{
 
 	width: 70vw;
@@ -111,7 +117,7 @@ a{
 	height: 200vh;
 	background-color: white;
 	display: grid;
-	grid-template-rows: repeat(7,1fr);
+	grid-template-rows: repeat(6,1fr);
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
 }
 
@@ -129,7 +135,8 @@ a{
 	width: 100%;
 	height: 100%;
 	
-	/*background-color: blue;*/
+	background-color: #3e3e3e;
+	background-blend-mode: multiply;
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
 	background-size: cover;
 }
@@ -139,7 +146,6 @@ a{
 	font-size: 1.7em;
 }
 .review-category:nth-of-type(1){
-	grid-row: 1 / 3;
 	background-image: url('../assets/img1.jpg');
 }
 .review-category:nth-of-type(2), .review:nth-of-type(2){
@@ -174,18 +180,34 @@ a{
 
 
 }
+.review-category .information{
+	position: block;
+	align-self: flex-end;
+	background-color: rgba(20,20,20,0);
+	width: 100%;
+	height: 30%;
+	padding: 10%;
+	padding-top: 5%;
+	font-size: 1.1em;
+	text-transform: uppercase;
 
+
+}
 .information .category{
 	color: #ffcc00;
 	font-size: 1em;
 	font-weight: bold;
 	text-transform: uppercase;
+	align-self: flex-end;
 }
 .information .title{
 	color: white;
 	font-size: 1.7em;
 	font-weight: bold;
 	
+}
+.review-category .information .title{
+	text-align: center;
 }
 .destacados{
 	width: 100vw;
@@ -311,6 +333,13 @@ a{
 		overflow-y: all;
 
 	}
+	.container-category{
+		width: 100vw;
+		grid-template-rows: repeat(6,1fr);
+	}
+	.review-category:nth-of-type(1){
+		grid-row: 1 / 2;
+	}
 	.review{
 		font-size: 1.2rem;
 	}
@@ -320,7 +349,7 @@ a{
 		font-weight: bold;
 		letter-spacing: 1px;
 		padding: 18px 15px;
-		font-size: 12px;
+		
 		transition: all ease .5s;
 	}
 
