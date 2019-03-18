@@ -19,10 +19,10 @@
 			DESIGN BY LUIS SANCHEZ
 		</div>
 	</div>
-	<div class="nav">
-		<div class="button"><p id="menu">MENU</p>
+	<div class="nav" >
+		<div class="button"><a href="#" onclick="bajarMenu()"><p >MENU</p></a>
 		</div>
-		<div class="items">
+		<div class="items" id="menu">
 			<div class="nav-item">Home</div>
 			<div class="nav-item">Técnologia</div>
 			<div class="nav-item">Diseño</div>
@@ -37,57 +37,57 @@
 		<h1>CATEGORIA</h1>
 	<div class="container-category">	
 			<div class="review-category">
-					<div class="information">
+	
 						<div class="category">
 							TECNOLOGIA
 						</div>
 						<div class="title">Los mejores telefonos de este año - 2019</div>						
-					</div>
+					
 				
 			</div>
 			
 				<div class="review-category">
-					<div class="information">
+	
 						<div class="category">
 							ENTRETENIMIENTO
 						</div>
 						<div class="title">Las 10 mejores series de Netflix - Marzo 2019</div>			
-					</div>
+					
 				</div>
 				<div class="review-category">
-					<div class="information">
+	
 						<div class="category">
 							TECNOLOGIA
 						</div>
 						<div class="title">Mejores técnologias de este año - 2019</div>				
-					</div>
+					
 				</div>
 			
 		
 		
 			<div class="review-category">
-				<div class="information">
+
 						<div class="category">
 							DISEÑO
 						</div>
 						<div class="title">Mejores Diseños de este año - 2019</div>
-				</div>
+				
 			</div>
 			<div class="review-category">
-				<div class="information">
+
 						<div class="category">
 							LUGARES
 						</div>
 						<div class="title">Las 10 Mejores Playas de Sudamerica - 2019</div>						
-				</div>
+				
 			</div>
 			<div class="review-category">
-				<div class="information">
+				
 						<div class="category">
 							DEPORTES
 						</div>
 						<div class="title">Las 8 Clasificados de la Champions League - 2019</div>						
-				</div>
+				
 			</div>		
 	</div>
 	</div>
@@ -110,6 +110,21 @@
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 	<div class="addthis_inline_share_toolbox"></div>
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c8d3fa184a30507"></script>
+	<script type="text/javascript">
+		menuDesplegado = false;
+		$menu = document.getElementById('menu');
 
+		function bajarMenu(){
+			menuDesplegado = !menuDesplegado;
+			
+			if (menuDesplegado) {
+				menu.style.position = 'relative'
+			}
+			else {
+				menu.style.position = 'absolute'
+			}
+			
+		}
+	</script>
 </body>
 </html>
